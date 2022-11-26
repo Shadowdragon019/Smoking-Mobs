@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "smoking_mobs.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SpawnSmokeOnBurningEntity"
+  ],
+  "client": [
+    "SpawnSmokeOnBurningEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

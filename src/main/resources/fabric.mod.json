@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "smoking_mobs",
+  "version": "${version}",
+
+  "name": "Smoking Mobs",
+  "description": "When a mob is on fire they create smoke!",
+  "authors": [
+    "Socially Anxious Dragon"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/smoking_mobs",
+    "sources": "https://github.com/Shadowdragon019/Smoking_Mobs",
+    "issues": "https://github.com/Shadowdragon019/Smoking_Mobs/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/YYM3NYssSJ"
+      }
+    }
+  },
+
+  "license": "MIT",
+  "icon": "assets/smoking_mobs/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "smoking_mobs.Main"
+    ],
+    "fabric-datagen": [
+      "smoking_mobs.util.data_gen.DataGen"
+    ]
+  },
+  "mixins": [
+    "smoking_mobs.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
